@@ -44,7 +44,7 @@
   height: auto; 
   background-color: aliceblue;
   padding: 10px;
-  border-radius: 5px;/* Maintain the aspect ratio */
+  border-radius: 5px;
 }
 .preview code {
 background-color: aliceblue;
