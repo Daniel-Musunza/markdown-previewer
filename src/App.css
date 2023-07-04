@@ -1,6 +1,9 @@
 .App {
   text-align: center;
   background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-height: 100vh;
   color: white;
   font-size: calc(10px + 2vmin);
@@ -10,41 +13,41 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 600px;
+  margin: auto;
 }
 
 .editor-heading {
   display: flex;
-  margin-left: 300px;
 }
 
 .preview-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: auto;
+  max-width: 1000px;
 }
 
 .preview-heading {
   display: flex;
-  margin-left: 300px;
 }
 
 .preview {
   background-color: black;
-  width:fit-content;
+ 
   border-radius: 5px;
-  margin-left: 300px;
-  margin-right: 300px;
   padding: 20px;
   white-space: pre-wrap;
   overflow-wrap: break-word;
   text-align: left; /* Align text to the left */
 }
 .preview img {
-  max-width: 100%; /* Limit the image width to fit within the preview area */
+  width: 100px; /* Limit the image width to fit within the preview area */
   height: auto; 
   background-color: aliceblue;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 5px;/* Maintain the aspect ratio */
 }
 .preview code {
 background-color: aliceblue;
@@ -54,8 +57,8 @@ height: auto;
 }
 textarea {
   border-radius: 5px;
-  margin-left: 300px;
-  margin-right: 300px;
+/*   margin-left: 300px;
+  margin-right: 300px; */
 }
 
 @media (prefers-reduced-motion: no-preference) {
